@@ -94,7 +94,7 @@ namespace Steganography.CLI {
             [Value(index: 1, Required = true, HelpText = "Data to encode.")]
             public string Data { get; set; } = string.Empty;
 
-            [Option(shortName: 'o', "out", Required = false, HelpText = "Output file name.", Default = "secret.bmp")]
+            [Option(shortName: 'o', "out", Required = false, HelpText = "Output file name.", Default = "secret" + Ext)]
             public string Out { get; set; } = string.Empty;
 
             [Option(
